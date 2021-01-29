@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to the Playlist App!</title>
+
+    <!-- import the SemanticUI stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <section class="ui container">
+      <section class="ui two column grid segment">
+          <div class="ui column">
+            <h1>Hi there!</h1>
+
+            <p>
+              I'm your cool new webpage. Made with
+              <a href="https://glitch.com">Glitch</a>!
+            </p>
+            <p>
+              My name is Dec!
+            </p>
+            
+            <div class="buttons">
+              <button class="ui blue button" onclick="showHide()">
+                Read more <i class="arrow circle right icon"></i>
+              </button>
+              <button class="ui green button" onclick="likeIt()">
+                Like it?<i class="thumbs up icon"></i>
+              </button>
+              <button class="ui red button" onclick="welcomeUser()">
+                Who are you? <i class="user icon"></i>
+              </button>
+              <button class="ui yellow button" onclick="changeColor()">
+                change color <i class="exchange icon"></i>
+              </button>
+              <button class="ui orange button" onclick="backgroundColor()">
+                change color of album <i class="circle outline icon"></i>
+              </button>
+              
+            </div>
+            <div id="readmore" class="ui message" >
+                <p>
+                  Over the coming months, we will add CRUD (Create, Read, Update, and Delete) functionality to this app. Users will also be able to create an account, log in, and upload images to the app.
+                </p>  
+            </div>
+            <div id="welcomeuser" class="ui message" onclick="hideWelcome()"> </div>
+          </div>
+          <div class="ui column">
+            <div class="ui two column grid segment">
+              <div id="albumcovers" >
+              <div class="ui column">
+                <img class="ui small circular image" src="https://cdn.glitch.com/6f20774c-5872-4f16-83ef-cbdcb238f3f3%2FbattleBot.png?v=1611842386365">
+                <img class="ui small circular image" src="https://cdn.glitch.com/6f20774c-5872-4f16-83ef-cbdcb238f3f3%2Fmystical%20.png?v=1611842400722">
+              </div>
+              <div class="ui column">                    
+                <img class="ui small circular image" src="https://cdn.glitch.com/6f20774c-5872-4f16-83ef-cbdcb238f3f3%2Fdevilhead.png?v=1611842392445">                    
+                <img class="ui small circular image" src="https://cdn.glitch.com/6f20774c-5872-4f16-83ef-cbdcb238f3f3%2FNinja.png?v=1611842410722">
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </section>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    
+    <!-- import the SemanticUI and jQuery javascript files -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+    ></script>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js"></script>
+  </body>
+</html>
